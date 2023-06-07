@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+  <main>
+    <h2>About Me</h2>
+    <p>Hello, I'm  Nurai. I'm a web developer.</p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </main>
+
+  <script>
+    // JavaScript code
+    function showMessage() {
+      var messageElement = document.getElementById('message');
+      messageElement.textContent = 'Button clicked!';
+    }
+  </script>
+</body>
+</html>
